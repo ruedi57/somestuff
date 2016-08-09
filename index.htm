@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bootstrap Grids</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="api/bootstrap.min.css">
+		<script src="api/jquery.min.js"></script>
+		
+		<script type='text/javascript' src="//code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+
+		
+		<script src="api/bootstrap.min.js"></script>
+		<script src="grids.js"></script>
+		<script></script>
+		<style>
+/* bubu.ch */		
+  .somach {
+	font-family: "Lucida Grande", Helvetica,  Arial, sans-serif !important;
+  }
+  .somach .footer {
+    background-color:rgba(0,0,0,0.7);
+	color: white;
+	width: 100%;
+	bottom:0;
+  	position:fixed;
+    padding:10px;
+}
+.somach .footer a {
+	color: white;
+}
+		
+		
+		
+		
+			/* Custom, iPhone Retina */ 
+			@media only screen and (min-width : 320px) {
+			}
+			/* Extra Small Devices, Phones */ 
+			@media only screen and (min-width : 480px) {
+			}
+			/* Small Devices, Tablets */
+			@media only screen and (min-width : 768px) {
+			}
+			/* Medium Devices, Desktops */
+			@media only screen and (min-width : 992px) {
+			}
+			/* Large Devices, Wide Screens */
+			@media only screen and (min-width : 1200px) {
+			}
+			
+			
+			
+			
+			
+			/*==========  Non-Mobile First Method  ==========*/
+			/* Large Devices, Wide Screens */
+			@media only screen and (max-width : 1200px) {
+
+.panel-heading {
+	padding: 5px 7px !important;
+}
+			}
+			/* Medium Devices, Desktops */
+			@media only screen and (max-width : 992px) {
+.panel-heading {
+	padding: 4px 4px !important;
+}
+			}
+			/* Small Devices, Tablets */
+			@media only screen and (max-width : 768px) {
+.panel-heading {
+	padding: 0 !important;
+}
+
+
+
+
+			}
+			/* Extra Small Devices, Phones */ 
+			@media only screen and (max-width : 480px) {
+			}
+			/* Custom, iPhone Retina */ 
+			@media only screen and (max-width : 320px) {
+			}
+
+
+			
+			
+/* Extra-kleine Geräte (Smartphones, weniger als 768px) */
+/* Kein Media-Query, weil dies der Standard in Bootstrap ist */
+
+/* Kleine Geräte (Tablets, 768px und breiter) */
+@media (min-width: @screen-sm-min) {
+
+}
+
+/* Mittlere Geräte (Desktop-PCs, 992px und breiter) */
+@media (min-width: @screen-md-min) {
+}
+
+/* Große Geräte (Desktop-PCs, 1200px und breiter) */
+@media (min-width: @screen-lg-min) {
+}
+			
+			
+			
+.rst-datum {
+	float: left;
+	width: 100%;
+	line-height: 100%;
+	background-color:#E4E4E4;
+	color:black;
+	font-weight:bold;
+	text-align: center;
+}
+.rst-zebra {
+	background-color: whitesmoke !important;
+}
+			
+.col-part-of-7 {
+    width:14.285%;
+    float:left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-part-of-5 {
+    width:20%;
+    float:left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-part-of-2 {
+    width:50%;
+    float:left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+   .draggable .panel-heading {
+        cursor: move;
+    }			
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default">1</button>
+				<button type="button" class="btn btn-default">2</button>
+				<button type="button" class="btn btn-default">3</button>
+				<button type="button" class="btn btn-default">4</button>
+				<button type="button" class="btn btn-default">5</button>
+				<button type="button" class="btn btn-default">6</button>
+				<button type="button" class="btn btn-default">7</button>
+				<button type="button" class="btn btn-default">8</button>
+				<button type="button" class="btn btn-default">9</button>
+				<button type="button" class="btn btn-default">10</button>
+				<button type="button" class="btn btn-default">11</button>
+				<button type="button" class="btn btn-default">97</button>
+				<button type="button" class="btn btn-default">98</button>
+				<button type="button" class="btn btn-default">99</button>
+			</div>
+			&nbsp;&nbsp;&nbsp;
+			<span id="rmsg"></span>
+		</div>
+		
+		
+
+		
+		
+		<div id="bsp1" class="panel panel-success">
+			<div class="panel-heading"><strong>Übereinander, nebeneinander</strong></div>
+			<div class="panel-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">.col-md-8</div>
+						<div class="col-md-4">.col-md-4</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">.col-md-4</div>
+						<div class="col-md-4">.col-md-4</div>
+						<div class="col-md-4">.col-md-4</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">.col-md-6</div>
+						<div class="col-md-6">.col-md-6</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bsp2" class="panel panel-success">
+			<div class="panel-heading"><strong>Fließender Container</strong></div>
+			<div class="panel-body">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+						<div class="col-md-1">.col-md-1</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">.col-md-8</div>
+						<div class="col-md-4">.col-md-4</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">.col-md-4</div>
+						<div class="col-md-4">.col-md-4</div>
+						<div class="col-md-4">.col-md-4</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">.col-md-6</div>
+						<div class="col-md-6">.col-md-6</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bsp3" class="panel panel-success">
+			<div class="panel-heading"><strong>Übereinander, nebeneinander</strong></div>
+			<div class="panel-body">
+				<div class="container">
+					<!-- Stapel die Spalten auf mobilen Geräten, indem du eine über die ganze und eine über die halbe Breite spannst -->
+					<div class="row">
+						<div class="col-xs-12 col-md-8">Mobil und Desktop-PC</div>
+						<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+					</div>
+					<!-- Spalten sind zunächst 50% breit und vergrößern sich auf Desktop-PCs auf 33.3% -->
+					<div class="row">
+						<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+						<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+						<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+					</div>
+					<!-- Spalten sind auf allen Bildschirmgrößen immer 50% breit -->
+					<div class="row">
+						<div class="col-xs-6">.col-xs-6</div>
+						<div class="col-xs-6">.col-xs-6</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bsp4" class="panel panel-success">
+			<div class="panel-heading"><strong>Mobil, Tablet und Desktop-PC</strong></div>
+			<div class="panel-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-8">col-xs-12 col-sm-6 col-md-8</div>
+						<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+						<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+						<!-- Optional: Setze die Floats der XS-Spalten zurück, falls ihr Inhalt nicht gleich hoch ist -->
+						<div class="clearfix visible-xs-block"></div>
+						<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bsp5" class="panel panel-success">
+			<div class="panel-heading"><strong>Spaltenumbruch</strong></div>
+			<div class="panel-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-9">.col-xs-9</div>
+						<div class="col-xs-4">.col-xs-4<br>Da 9 + 4 = 13 &gt; 12, rutscht dieser 4 Spalten breite div als ganze Einheit in eine neue Zeile.</div>
+						<div class="col-xs-6">.col-xs-6<br>Folgende Spalten werden in der neuen Zeile fortgeführt.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bsp6" class="panel panel-success">
+			<div class="panel-heading"><strong>Spalten abrücken</strong></div>
+			<div class="panel-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">.col-md-4</div>
+						<div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+						<div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bsp7" class="panel panel-success">
+			<div class="panel-heading"><strong>Spalten verschachteln</strong></div>
+			<div class="panel-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-9">
+							Ebene 1: .col-sm-9
+							<div class="row">
+								<div class="col-xs-8 col-sm-6">
+									Ebene 2: .col-xs-8 .col-sm-6
+								</div>
+								<div class="col-xs-4 col-sm-6">
+									Ebene 2: .col-xs-4 .col-sm-6
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bsp8" class="panel panel-success">
+			<div class="panel-heading"><strong>Spalten umordnen</strong></div>
+			<div class="panel-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+						<div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bsp9" class="panel panel-success">
+			<div class="panel-heading"><strong>Test</strong></div>
+			<div class="panel-body">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="panel panel-success">
+								<div class="panel-heading"><strong>Bezeichung/Wert</strong></div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-lg-6 col-md-8">Bezeichnung:</div>
+										<div class="col-lg-6 col-md-4 text-right">08.03.2016</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bsp10" class="panel panel-success">
+			<div class="panel-heading"><strong>Test</strong></div>
+			<div class="panel-body">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-6" id="phaenoDATASHEETS_266_t1">
+							<div class="panel panel-success">
+								<div class="panel-heading"><strong>Bäume</strong></div>
+								<div class="panel-body" id="phaenoDATASHEETS_266_t1_cnt">
+									<div class="row">
+									</div>
+									<!------------------------------------------------------------------------------------------------------------>
+									<div class="col-lg7 tttzzz">
+										<div class="row">
+											<div class="col-part-of-7 tttzzz">&nbsp;</div>
+											<div class="col-part-of-7 tttzzz">Allgemeine Blattentfaltung</div>
+											<div class="col-part-of-7 tttzzz">Beginn der Blüte</div>
+											<div class="col-part-of-7 tttzzz">Allgemeine Blüte</div>
+											<div class="col-part-of-7 tttzzz">Allgemeine Fruchtreife</div>
+											<div class="col-part-of-7 tttzzz">Allgemeine Blattverfärbung</div>
+											<div class="col-part-of-7 tttzzz">Allgemeiner Blattfall</div>
+											<!--<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 tttzzz" style="display:none"></div>-->
+										</div>
+										<div class="row rst-zebra">
+											<div class="col-part-of-7 tttzzz">Rosskastanie</div>
+											<div class="col-part-of-7 tttzzz">
+												<span class="rst-datum">&nbsp;</span>
+											</div>
+											<div class="col-part-of-7 tttzzz">
+												<span class="rst-datum">&nbsp;</span>
+											</div>
+											<div class="col-part-of-7 tttzzz">
+												<span class="rst-datum">12.12.2015</span>
+											</div>
+											<div class="col-part-of-7 tttzzz">&nbsp;</div>
+											<div class="col-part-of-7 tttzzz">
+												<span class="rst-datum">13.01.2016</span>
+											</div>
+											<div class="col-part-of-7 tttzzz">
+												<span class="rst-datum">&nbsp;</span>
+											</div>
+											<!--<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 tttzzz" style="display:none"></div>-->
+										</div>
+									</div>
+									<!------------------------------------------------------------------------------------------------------------>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bsp11" class="somach panel panel-success">
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2 col-xs-6">
+				<img src="images/rhabakuk.jpg" alt="hanswurscht habakuk">
+			</div>
+			<div class="col-sm-10  col-xs-6">
+				hanswurscht habakuk<br>
+				<a href="mailto:coaching@bubu.ch">gaga@bubu.ch</a>
+			</div>
+		</div>
+		<div class="row">&nbsp;</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<strong><span>Irgendwas Irgendwas</span></strong>
+					</div>
+				<ul class="list-group">
+					<li class="list-group-item">Ich kann Irgendwas Irgendwasn</li>
+					<li class="list-group-item">Mein Alter Irgendwas Irgendwas</li>
+					<li class="list-group-item">Das Praktizieren von Irgendwas Irgendwas. 
+					</li>
+					<li class="list-group-item">Seminare bei <a href="http://www.solutionsurfers.ch" target="_new">Irgendwas Irgendwas</a></li>
+					<li class="list-group-item">Der Wunsch, Irgendwas Irgendwas zu sein.</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row footer">
+			<div class="col-lg-2 col-sm-4 col-xs-6">hanswurscht habakuk</div>
+			<div class="col-lg-2 col-sm-4 col-xs-6">Pokemongo 5465</div>
+			<div class="col-lg-2 col-sm-4 col-xs-6">CH-2345 Nienefindige</div>
+			<div class="col-lg-2 col-sm-4 col-xs-6"><a href="mailto:info@bubu.ch">info@bubu.ch</a></div>
+			<div class="col-lg-2 col-sm-4 col-xs-6">+41 71 423 12 11</div>
+			<div class="col-lg-2 col-sm-4 col-xs-6">+41 87 553 45 65</div>
+		</div>
+	</div>
+
+
+
+		</div>
+		<div id="bspVORLAGE" class="panel panel-success">
+			<div class="panel-heading"><strong>Test</strong></div>
+			<div class="panel-body">
+				<div class="container-fluid">
+					<div class="row">
+						<!------------------------------------------------------------------------------------------------------------>
+						<!------------------------------------------------------------------------------------------------------------>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bsp97" class="panel panel-success">
+			<div class="panel-heading"><strong>Real Life G</strong></div>
+			<div class="panel-body">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+							<div class="panel panel-success">
+								<div class="panel-heading"><strong>Beobachtungsobjekt Baum24</strong></div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-lg-6 col-md-8">Schule/Organisation:</div>
+										<div class="col-lg-6 col-md-4 text-right">Sekkirchberg</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-8">Beschreibung:</div>
+										<div class="col-lg-6 col-md-4 text-right">Vorort/leicht bebaut</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-8">Höhe:</div>
+										<div class="col-lg-6 col-md-4 text-right">500</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-8">Exposition:</div>
+										<div class="col-lg-6 col-md-4 text-right">flach/keine Hangneigung</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-8">Hangneigung (%):</div>
+										<div class="col-lg-6 col-md-4 text-right">0</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-8">Schatten:</div>
+										<div class="col-lg-6 col-md-4 text-right">direktes Sonnenlicht (mehr als 5 Std/Tag)</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-8">Bewässert:</div>
+										<div class="col-lg-6 col-md-4 text-right">ja</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-8">weniger als 100m zu Gebäude/Strasse:</div>
+										<div class="col-lg-6 col-md-4 text-right">ja</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-8">Habitat:</div>
+										<div class="col-lg-6 col-md-4 text-right">Rasengarten</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-8">Waldtyp:</div>
+										<div class="col-lg-6 col-md-4 text-right">kein Wald</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-8"></div>
+										<div class="col-lg-6 col-md-4 text-right"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="panel panel-success">
+								<div class="panel-heading"><strong>Messung Hasel</strong></div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-lg-8 col-md-8">Blüte:</div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8"><span class="mrg">Beginn der Blüte:</span></div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8"><span class="mrg">Allgemeine Blüte:</span></div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8"><span class="mrg">Ende der Blüte:</span></div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;Knospung:</div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vor der Knospung:</div>
+										<div class="col-lg-4 col-md-4 text-right">28.11.2015</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beginn der Knospung:</div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;Blattentfaltung:</div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beginn der Blattentfaltung:</div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allgemeine Blattentfaltung:</div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;Fruchtreife:</div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beginn der Fruchtreife:</div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allgemeine Fruchtreife:</div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beginn der Blattverfärbung:</div>
+										<div class="col-lg-4 col-md-4 text-right">20.10.2015</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allgemeine Blattverfärbung:</div>
+										<div class="col-lg-4 col-md-4 text-right">27.10.2015</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;Blattfall:</div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allgemeiner Blattfall:</div>
+										<div class="col-lg-4 col-md-4 text-right">31.10.2015</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-8 col-md-8"></div>
+										<div class="col-lg-4 col-md-4 text-right"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6" id="pnl_BL_ENTW_phaenoDATASHEETS_992">
+							<div class="panel panel-success">
+								<div class="panel-heading"><strong>Blattentwicklung</strong></div>
+								<div class="panel-body" >
+									<p>1<img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="17.11.2015" style="margin-left:1px;background-color:#B58F4F"></p>
+									<p>2<img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#B58F4F"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#B58F4F"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#B58F4F"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#B58F4F"><img src="bx.gif" title="17.11.2015" style="margin-left:1px;background-color:#B58F4F"></p>
+									<p>3<img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="17.11.2015" style="margin-left:1px;background-color:#B58F4F"></p>
+									<p>4<img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="17.11.2015" style="margin-left:1px;background-color:#B58F4F"></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6" id="pnl_BL_VERF_phaenoDATASHEETS_992">
+							<div class="panel panel-success">
+								<div class="panel-heading"><strong>Herbstverfärbung</strong></div>
+								<div class="panel-body" >
+									<p>1<img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="17.11.2015" style="margin-left:1px;background-color:#B58F4F"></p>
+									<p>2<img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#B58F4F"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#B58F4F"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#B58F4F"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#B58F4F"><img src="bx.gif" title="17.11.2015" style="margin-left:1px;background-color:#B58F4F"></p>
+									<p>3<img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="17.11.2015" style="margin-left:1px;background-color:#B58F4F"></p>
+									<p>4<img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="22.10.2015" style="margin-left:1px;background-color:#1BA549"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="03.11.2015" style="margin-left:1px;background-color:#6BBB45"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="06.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="10.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="13.11.2015" style="margin-left:1px;background-color:#F3C531"><img src="bx.gif" title="17.11.2015" style="margin-left:1px;background-color:#B58F4F"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bsp98" class="panel panel-success">
+			<div class="panel-heading"><strong>Erfassung</strong></div>
+			<div class="panel-body">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="layzilla-content" id="main_content">
+							<td&nbsp;&nbsp;&nbsp;< td=""></td&nbsp;&nbsp;&nbsp;<><td&nbsp;&nbsp;&nbsp;< td=""></td&nbsp;&nbsp;&nbsp;<><td&nbsp;&nbsp;&nbsp;< td=""></td&nbsp;&nbsp;&nbsp;<><td&nbsp;&nbsp;&nbsp;< td=""></td&nbsp;&nbsp;&nbsp;<><td&nbsp;&nbsp;&nbsp;< td=""></td&nbsp;&nbsp;&nbsp;<><td&nbsp;&nbsp;&nbsp;< td=""></td&nbsp;&nbsp;&nbsp;<>
+							<table id="pheno_tbl" border="1" cellpadding="3" cellspacing="0">
+								<tbody>
+									<tr>
+										<td id="0_0" class="hidden">HS</td>
+										<td id="0_1" class="hidden">HS</td>
+										<td id="0_2" class="hidden"></td>
+										<td id="0_3" style="padding-left: 0px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Hasel</b><br>&nbsp;&nbsp;(Corylus avellana)</p>
+										</td>
+										<td id="0_4" class="hidden">(Corylus avellana)</td>
+										<td id="0_6" class="hidden">0</td>
+									</tr>
+									<tr>
+										<td id="1_0" class="hidden">HS01</td>
+										<td id="1_1" class="hidden">HS</td>
+										<td id="1_2" class="hidden"></td>
+										<td id="1_3" style="padding-left: 20px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Blüte</b><br>&nbsp;&nbsp;(männl. Kätzchen)</p>
+										</td>
+										<td id="1_4" class="hidden">(männl. Kätzchen)</td>
+										<td id="1_6" class="hidden">0</td>
+									</tr>
+									<tr>
+										<td id="2_0" class="hidden">HS0101</td>
+										<td id="2_1" class="hidden">HS01</td>
+										<td id="2_2" class="hidden">BLB</td>
+										<td id="2_3" style="padding-left: 40px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Beginn der Blüte</b><br>&nbsp;&nbsp;3 Kätzchen im Strauch stäuben</p>
+										</td>
+										<td id="2_4" class="hidden">3 Kätzchen im Strauch stäuben</td>
+										<td><span id="MS_DATE_2" style="BACKGROUND-COLOR:#fcd113;" title="MS_DATE_2 Eintrag erfassen/mutieren" class="globeKnopf IN_SEQ" onclick="_c_pheno.getMS_DATE(this.id,2,'Beginn%20der%20Bl%FCte','BLB')">&nbsp;</span></td>
+										<td id="2_6" class="hidden">1</td>
+									</tr>
+									<tr>
+										<td id="3_0" class="hidden">HS0102</td>
+										<td id="3_1" class="hidden">HS01</td>
+										<td id="3_2" class="hidden">BLA</td>
+										<td id="3_3" style="padding-left: 40px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Allgemeine Blüte</b><br>&nbsp;&nbsp;50% der Kätzchen stäuben</p>
+										</td>
+										<td id="3_4" class="hidden">50% der Kätzchen stäuben</td>
+										<td><span id="MS_DATE_3" style="BACKGROUND-COLOR:#fcd113;" title="MS_DATE_3 Eintrag erfassen/mutieren" class="globeKnopf IN_SEQ" onclick="_c_pheno.getMS_DATE(this.id,3,'Allgemeine%20Bl%FCte','BLA')">&nbsp;</span></td>
+										<td id="3_6" class="hidden">1</td>
+									</tr>
+									<tr>
+										<td id="4_0" class="hidden">HS0103</td>
+										<td id="4_1" class="hidden">HS01</td>
+										<td id="4_2" class="hidden">BLE</td>
+										<td id="4_3" style="padding-left: 40px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Ende der Blüte</b><br>&nbsp;&nbsp;95 % der Kätzchen sind verblüht, abgestorben oder abgefallen</p>
+										</td>
+										<td id="4_4" class="hidden">95 % der Kätzchen sind verblüht, abgestorben oder abgefallen</td>
+										<td><span id="MS_DATE_4" style="BACKGROUND-COLOR:#fcd113;" title="MS_DATE_4 Eintrag erfassen/mutieren" class="globeKnopf IN_SEQ" onclick="_c_pheno.getMS_DATE(this.id,4,'Ende%20der%20Bl%FCte','BLE')">&nbsp;</span></td>
+										<td id="4_6" class="hidden">1</td>
+									</tr>
+									<tr>
+										<td id="5_0" class="hidden">HS20</td>
+										<td id="5_1" class="hidden">HS</td>
+										<td id="5_2" class="hidden"></td>
+										<td id="5_3" style="padding-left: 20px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Knospung</b></p>
+										</td>
+										<td id="5_4" class="hidden"></td>
+										<td id="5_6" class="hidden">0</td>
+									</tr>
+									<tr>
+										<td id="6_0" class="hidden">HS2001</td>
+										<td id="6_1" class="hidden">HS20</td>
+										<td id="6_2" class="hidden">KNV</td>
+										<td id="6_3" style="padding-left: 40px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Vor der Knospung</b><br>&nbsp;&nbsp;Knospung steht kurz bevor</p>
+										</td>
+										<td id="6_4" class="hidden">Knospung steht kurz bevor</td>
+										<td><span id="MS_DATE_6" style="BACKGROUND-COLOR:#fcd113;" title="MS_DATE_6 Eintrag erfassen/mutieren" class="globeKnopf " onclick="_c_pheno.getMS_DATE(this.id,6,'Vor%20der%20Knospung','KNV')">&nbsp;</span></td>
+										<td id="6_6" class="hidden">0</td>
+									</tr>
+									<tr>
+										<td id="7_0" class="hidden">HS2002</td>
+										<td id="7_1" class="hidden">HS20</td>
+										<td id="7_2" class="hidden">KNS</td>
+										<td id="7_3" style="padding-left: 40px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Beginn der Knospung</b><br>&nbsp;&nbsp;Kleine grüne Spitzchen sind ersichtlich an drei Orten im Baum</p>
+										</td>
+										<td id="7_4" class="hidden">Kleine grüne Spitzchen sind ersichtlich an drei Orten im Baum</td>
+										<td><span id="MS_DATE_7" style="BACKGROUND-COLOR:#fcd113;" title="MS_DATE_7 Eintrag erfassen/mutieren" class="globeKnopf " onclick="_c_pheno.getMS_DATE(this.id,7,'Beginn%20der%20Knospung','KNS')">&nbsp;</span></td>
+										<td id="7_6" class="hidden">0</td>
+									</tr>
+									<tr>
+										<td id="8_0" class="hidden">HS30</td>
+										<td id="8_1" class="hidden">HS</td>
+										<td id="8_2" class="hidden"></td>
+										<td id="8_3" style="padding-left: 20px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Blattentwicklung</b><br>&nbsp;&nbsp;Blattentwicklung an einem südlichen Ast, 4 Blätter</p>
+										</td>
+										<td id="8_4" class="hidden">Blattentwicklung an einem südlichen Ast, 4 Blätter</td>
+										<td><span id="BL_ENTW_NEW_8" style="BACKGROUND-COLOR:#fcd113;" title="BL_ENTW_NEW_8 Eintrag erfassen/mutieren" class="globeKnopf " onclick="_c_pheno.getBL_ENTW_NEW(this.id,8,'Blattentwicklung','')"><b>...</b></span></td>
+										<td id="8_6" class="hidden">0</td>
+									</tr>
+									<tr>
+										<td id="9_0" class="hidden">HS3001</td>
+										<td id="9_1" class="hidden">HS30</td>
+										<td id="9_2" class="hidden"></td>
+										<td id="9_3" style="padding-left: 40;">
+											<div id="CONT_BL_ENTW" style="padding: 3px;" class="small">&nbsp;</div>
+										</td>
+										<td id="9_4" class="hidden"></td>
+										<td id="9_6" class="hidden">0</td>
+									</tr>
+									<tr>
+										<td id="10_0" class="hidden">HS50</td>
+										<td id="10_1" class="hidden">HS</td>
+										<td id="10_2" class="hidden"></td>
+										<td id="10_3" style="padding-left: 20px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Blattentfaltung</b></p>
+										</td>
+										<td id="10_4" class="hidden"></td>
+										<td id="10_6" class="hidden">1</td>
+									</tr>
+									<tr>
+										<td id="11_0" class="hidden">HS5002</td>
+										<td id="11_1" class="hidden">HS50</td>
+										<td id="11_2" class="hidden">BES</td>
+										<td id="11_3" style="padding-left: 40px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Beginn der Blattentfaltung</b><br>&nbsp;&nbsp;Aus 3 Knospen haben sich die ersten Blätter entfaltet</p>
+										</td>
+										<td id="11_4" class="hidden">Aus 3 Knospen haben sich die ersten Blätter entfaltet</td>
+										<td><span id="MS_DATE_11" style="BACKGROUND-COLOR:#fcd113;" title="MS_DATE_11 Eintrag erfassen/mutieren" class="globeKnopf " onclick="_c_pheno.getMS_DATE(this.id,11,'Beginn%20der%20Blattentfaltung','BES')">&nbsp;</span></td>
+										<td id="11_6" class="hidden">0</td>
+									</tr>
+									<tr>
+										<td id="12_0" class="hidden">HS5003</td>
+										<td id="12_1" class="hidden">HS50</td>
+										<td id="12_2" class="hidden">BEA</td>
+										<td id="12_3" style="padding-left: 40px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Allgemeine Blattentfaltung</b><br>&nbsp;&nbsp;50% der Blätter des Strauches entfaltet</p>
+										</td>
+										<td id="12_4" class="hidden">50% der Blätter des Strauches entfaltet</td>
+										<td><span id="MS_DATE_12" style="BACKGROUND-COLOR:#fcd113;" title="MS_DATE_12 Eintrag erfassen/mutieren" class="globeKnopf IN_SEQ" onclick="_c_pheno.getMS_DATE(this.id,12,'Allgemeine%20Blattentfaltung','BEA')">&nbsp;</span></td>
+										<td id="12_6" class="hidden">1</td>
+									</tr>
+									<tr>
+										<td id="13_0" class="hidden">HS60</td>
+										<td id="13_1" class="hidden">HS</td>
+										<td id="13_2" class="hidden"></td>
+										<td id="13_3" style="padding-left: 20px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Fruchtreife</b><br>&nbsp;&nbsp;Nussreife</p>
+										</td>
+										<td id="13_4" class="hidden">Nussreife</td>
+										<td id="13_6" class="hidden">0</td>
+									</tr>
+									<tr>
+										<td id="14_0" class="hidden">HS6001</td>
+										<td id="14_1" class="hidden">HS60</td>
+										<td id="14_2" class="hidden">FRB</td>
+										<td id="14_3" style="padding-left: 40px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Beginn der Fruchtreife</b><br>&nbsp;&nbsp;3 Einzelfrüchte haben normales Reifestadium erreicht</p>
+										</td>
+										<td id="14_4" class="hidden">3 Einzelfrüchte haben normales Reifestadium erreicht</td>
+										<td><span id="MS_DATE_14" style="BACKGROUND-COLOR:#fcd113;" title="MS_DATE_14 Eintrag erfassen/mutieren" class="globeKnopf IN_SEQ" onclick="_c_pheno.getMS_DATE(this.id,14,'Beginn%20der%20Fruchtreife','FRB')">&nbsp;</span></td>
+										<td id="14_6" class="hidden">1</td>
+									</tr>
+									<tr>
+										<td id="15_0" class="hidden">HS6002</td>
+										<td id="15_1" class="hidden">HS60</td>
+										<td id="15_2" class="hidden">FRA</td>
+										<td id="15_3" style="padding-left: 40px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Allgemeine Fruchtreife</b><br>&nbsp;&nbsp;50% der Einzelfrüchte haben normales Reifestadium erreicht</p>
+										</td>
+										<td id="15_4" class="hidden">50% der Einzelfrüchte haben normales Reifestadium erreicht</td>
+										<td><span id="MS_DATE_15" style="BACKGROUND-COLOR:#fcd113;" title="MS_DATE_15 Eintrag erfassen/mutieren" class="globeKnopf IN_SEQ" onclick="_c_pheno.getMS_DATE(this.id,15,'Allgemeine%20Fruchtreife','FRA')">&nbsp;</span></td>
+										<td id="15_6" class="hidden">1</td>
+									</tr>
+									<tr>
+										<td id="16_0" class="hidden">HS70</td>
+										<td id="16_1" class="hidden">HS</td>
+										<td id="16_2" class="hidden"></td>
+										<td id="16_3" style="padding-left: 20px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Herbstverfärbung</b><br>&nbsp;&nbsp;Blattverfärbung an einem südlichen Ast, 4 Blätter</p>
+										</td>
+										<td id="16_4" class="hidden">Blattverfärbung an einem südlichen Ast, 4 Blätter</td>
+										<td><span id="BL_VERF_NEW_16" style="BACKGROUND-COLOR:#fcd113;" title="BL_VERF_NEW_16 Eintrag erfassen/mutieren" class="globeKnopf " onclick="_c_pheno.getBL_VERF_NEW(this.id,16,'Herbstverf%E4rbung','')"><b>...</b></span></td>
+										<td id="16_6" class="hidden">0</td>
+									</tr>
+									<tr>
+										<td id="17_0" class="hidden">HS7001</td>
+										<td id="17_1" class="hidden">HS70</td>
+										<td id="17_2" class="hidden"></td>
+										<td id="17_3" style="padding-left: 40;">
+											<div id="CONT_BL_VERF" style="padding: 3px;" class="small">&nbsp;</div>
+										</td>
+										<td id="17_4" class="hidden"></td>
+										<td id="17_6" class="hidden">0</td>
+									</tr>
+									<tr>
+										<td id="18_0" class="hidden">HS7002</td>
+										<td id="18_1" class="hidden">HS70</td>
+										<td id="18_2" class="hidden">BVS</td>
+										<td id="18_3" style="padding-left: 40px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Beginn der Blattverfärbung</b><br>&nbsp;&nbsp;10% der sommerlichen Blattfläche ist herbstlich verfärbt</p>
+										</td>
+										<td id="18_4" class="hidden">10% der sommerlichen Blattfläche ist herbstlich verfärbt</td>
+										<td><span id="MS_DATE_18" style="BACKGROUND-COLOR:#fcd113;" title="MS_DATE_18 Eintrag erfassen/mutieren" class="globeKnopf " onclick="_c_pheno.getMS_DATE(this.id,18,'Beginn%20der%20Blattverf%E4rbung','BVS')">&nbsp;</span></td>
+										<td id="18_6" class="hidden">0</td>
+									</tr>
+									<tr>
+										<td id="19_0" class="hidden">HS7003</td>
+										<td id="19_1" class="hidden">HS70</td>
+										<td id="19_2" class="hidden">BVA</td>
+										<td id="19_3" style="padding-left: 40px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Allgemeine Blattverfärbung</b><br>&nbsp;&nbsp;50% der sommerlichen Blattfläche ist herbstlich verfärbt</p>
+										</td>
+										<td id="19_4" class="hidden">50% der sommerlichen Blattfläche ist herbstlich verfärbt</td>
+										<td><span id="MS_DATE_19" style="BACKGROUND-COLOR:#fcd113;" title="MS_DATE_19 Eintrag erfassen/mutieren" class="globeKnopf IN_SEQ" onclick="_c_pheno.getMS_DATE(this.id,19,'Allgemeine%20Blattverf%E4rbung','BVA')">&nbsp;</span></td>
+										<td id="19_6" class="hidden">1</td>
+									</tr>
+									<tr>
+										<td id="20_0" class="hidden">HS75</td>
+										<td id="20_1" class="hidden">HS</td>
+										<td id="20_2" class="hidden"></td>
+										<td id="20_3" style="padding-left: 20px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Blattfall</b></p>
+										</td>
+										<td id="20_4" class="hidden"></td>
+										<td id="20_6" class="hidden">1</td>
+									</tr>
+									<tr>
+										<td id="21_0" class="hidden">HS7501</td>
+										<td id="21_1" class="hidden">HS75</td>
+										<td id="21_2" class="hidden">BFA</td>
+										<td id="21_3" style="padding-left: 40px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Allgemeiner Blattfall</b><br>&nbsp;&nbsp;50% der sommerlichen Blattfläche ist abgefallen</p>
+										</td>
+										<td id="21_4" class="hidden">50% der sommerlichen Blattfläche ist abgefallen</td>
+										<td><span id="MS_DATE_21" style="BACKGROUND-COLOR:#fcd113;" title="MS_DATE_21 Eintrag erfassen/mutieren" class="globeKnopf IN_SEQ" onclick="_c_pheno.getMS_DATE(this.id,21,'Allgemeiner%20Blattfall','BFA')">&nbsp;</span></td>
+										<td id="21_6" class="hidden">1</td>
+									</tr>
+									<tr>
+										<td id="22_0" class="hidden">HS80</td>
+										<td id="22_1" class="hidden">HS</td>
+										<td id="22_2" class="hidden"></td>
+										<td id="22_3" style="padding-left: 20px;">
+											<p style="padding: 3px;margin:0" class="small"><b>Prozentschätzmethode</b></p>
+										</td>
+										<td id="22_4" class="hidden"></td>
+										<td><span id="PRZMETH_NEW_22" style="BACKGROUND-COLOR:#fcd113;" title="PRZMETH_NEW_22 Eintrag erfassen/mutieren" class="globeKnopf " onclick="_c_pheno.getPRZMETH_NEW(this.id,22,'Prozentsch%E4tzmethode','')"><b>...</b></span></td>
+										<td id="22_6" class="hidden">0</td>
+									</tr>
+									<tr>
+										<td id="23_0" class="hidden">HS8001</td>
+										<td id="23_1" class="hidden">HS80</td>
+										<td id="23_2" class="hidden"></td>
+										<td id="23_3" style="padding-left: 40;">
+											<div id="CONT_PRZMETH" style="padding: 3px;" class="small">&nbsp;</div>
+										</td>
+										<td id="23_4" class="hidden"></td>
+										<td id="23_6" class="hidden">0</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bsp99" class="panel panel-success">
+			<div class="panel-heading"><strong>Real Life M</strong></div>
+			<div class="panel-body">
+				<div class="container-fluid">
+					<div class="row">
+						<!------------------------------------------------------------------------------------------------------------>
+						<div id="phaenoDATASHEETS_266" class="tab-pane fade active in">
+							<div class="row draggable">
+								<div class="col-lg-8 col-md-12" id="phaenoDATASHEETS_266_t1">
+									<div class="panel panel-success">
+										<div class="panel-heading"><strong>Bäume</strong></div>
+										<div class="panel-body" id="phaenoDATASHEETS_266_t1_cnt">
+											<div class="row">
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">Allgemeine Blattentfaltung</div>
+												<div class="col-part-of-7 huhuhu">Beginn der Blüte</div>
+												<div class="col-part-of-7 huhuhu">Allgemeine Blüte</div>
+												<div class="col-part-of-7 huhuhu">Allgemeine Fruchtreife</div>
+												<div class="col-part-of-7 huhuhu">Allgemeine Blattverfärbung</div>
+												<div class="col-part-of-7 huhuhu">Allgemeiner Blattfall</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-7 huhuhu">Rosskastanie</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+											<div class="row rst-zebra">
+												<div class="col-part-of-7 huhuhu">Buche</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-7 huhuhu">Bergahorn</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+											</div>
+											<div class="row rst-zebra">
+												<div class="col-part-of-7 huhuhu">Vogelbeere</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-7 huhuhu">Haselstrauch</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">28.01.2016</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">04.02.2016</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+											</div>
+											<div class="row rst-zebra">
+												<div class="col-part-of-7 huhuhu">Sommerlinde</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-7 huhuhu">Roter Holunder</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+											</div>
+											<div class="row rst-zebra">
+												<div class="col-part-of-7 huhuhu">Schwarzer Holunder</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">14.03.2016</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-7 huhuhu">Winterlinde</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+											</div>
+											<div class="row rst-zebra">
+												<div class="col-part-of-7 huhuhu">Lärche</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-7 huhuhu">Fichte</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+											</div>
+											<div class="row rst-zebra">
+												<div class="col-part-of-7 huhuhu">Robinie</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-7 huhuhu">Hängebirke</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">&nbsp;</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+											<div class="row rst-zebra">
+												<div class="col-part-of-7 huhuhu">Edelkastanie</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-7 huhuhu">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row draggable">
+								<div class="col-lg-5 col-md-6" id="phaenoDATASHEETS_266_t2">
+									<div class="panel panel-success">
+										<div class="panel-heading"><strong>Kulturpflanzen</strong></div>
+										<div class="panel-body" id="phaenoDATASHEETS_266_t2_cnt">
+											<div class="row">
+												<div class="col-part-of-5 hohoho">&nbsp;</div>
+												<div class="col-part-of-5 hohoho">Beginn der Blüte</div>
+												<div class="col-part-of-5 hohoho">Allgemeine Blüte</div>
+												<div class="col-part-of-5 hohoho">Weinlese</div>
+												<div class="col-part-of-5 hohoho">Beginn</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-5 hohoho">Kirschbaum</div>
+												<div class="col-part-of-5 hohoho">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-5 hohoho">
+													<span class="rst-datum">12.12.2016</span>
+												</div>
+												<div class="col-part-of-5 hohoho">&nbsp;</div>
+												<div class="col-part-of-5 hohoho">&nbsp;</div>
+											</div>
+											<div class="row rst-zebra">
+												<div class="col-part-of-5 hohoho">Birnbaum</div>
+												<div class="col-part-of-5 hohoho">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-5 hohoho">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-5 hohoho">&nbsp;</div>
+												<div class="col-part-of-5 hohoho">&nbsp;</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-5 hohoho">Apfelbaum</div>
+												<div class="col-part-of-5 hohoho">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-5 hohoho">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-5 hohoho">&nbsp;</div>
+												<div class="col-part-of-5 hohoho">&nbsp;</div>
+											</div>
+											<div class="row rst-zebra">
+												<div class="col-part-of-5 hohoho">Weinrebe</div>
+												<div class="col-part-of-5 hohoho">&nbsp;</div>
+												<div class="col-part-of-5 hohoho">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-5 hohoho">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+												<div class="col-part-of-5 hohoho">&nbsp;</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-5 hohoho">Heuernte</div>
+												<div class="col-part-of-5 hohoho">&nbsp;</div>
+												<div class="col-part-of-5 hohoho">&nbsp;</div>
+												<div class="col-part-of-5 hohoho">&nbsp;</div>
+												<div class="col-part-of-5 hohoho">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-6" id="phaenoDATASHEETS_266_t3">
+									<div class="panel panel-success">
+										<div class="panel-heading"><strong>Kräuter</strong></div>
+										<div class="panel-body" id="phaenoDATASHEETS_266_t3_cnt">
+											<div class="row">
+												<div class="col-part-of-2 lalala">&nbsp;</div>
+												<div class="col-part-of-2 lalala">Vollblüte / Blüte</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-2 lalala">Huflattich</div>
+												<div class="col-part-of-2 lalala">
+													<span class="rst-datum">14.03.2016</span>
+												</div>
+											</div>
+											<div class="row rst-zebra">
+												<div class="col-part-of-2 lalala">Buschwindröschen</div>
+												<div class="col-part-of-2 lalala">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-2 lalala">Wiesen-Knaulgras</div>
+												<div class="col-part-of-2 lalala">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+											<div class="row rst-zebra">
+												<div class="col-part-of-2 lalala">Wiesenlöwenzahn</div>
+												<div class="col-part-of-2 lalala">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-2 lalala">Wald-Weidenröschen</div>
+												<div class="col-part-of-2 lalala">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+											<div class="row rst-zebra">
+												<div class="col-part-of-2 lalala">Wiesenschaumkraut</div>
+												<div class="col-part-of-2 lalala">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+											<div class="row gerade">
+												<div class="col-part-of-2 lalala">Gemeine Margerite</div>
+												<div class="col-part-of-2 lalala">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+											<div class="row rst-zebra">
+												<div class="col-part-of-2 lalala">Herbstzeitlose</div>
+												<div class="col-part-of-2 lalala">
+													<span class="rst-datum">&nbsp;</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!------------------------------------------------------------------------------------------------------------>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
